@@ -1,0 +1,21 @@
+def len(list):
+    count=0
+    for i in list:
+        count = count+1
+    return count
+def maximum(list):
+    max = list[0]
+    for index in range(1,len(list)):
+        if list[index] > max:
+            max = list[index]
+    return max
+def minimum(list):
+    mini = list[0]
+    for index in range(1,len(list)):
+        if list[index] < mini:
+            mini = list[index]
+    return mini
+list = list(map(int,input("Enter the list values: ").split()))
+print(len(list))
+print("the maximum in the list is: ",maximum(list))
+print("the minimum in the list is: ",minimum(list))

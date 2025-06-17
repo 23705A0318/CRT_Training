@@ -1,0 +1,17 @@
+student_info = {}
+for i in range(3):
+    roll_number = input("Enter the student roll number: ")
+    student_data = [] 
+    name = input("Enter the name of the student: ")
+    department = input("Enter the student department: ")
+    year = input("Enter student year: ")
+    student_data.append(name)  
+    student_data.append(department)  
+    student_data.append(year)
+    student_info[roll_number] = student_data
+
+search_roll = input("Enter the student roll number: ")
+if search_roll in student_info:
+    print("Here is the student information:", student_info[search_roll])
+else:
+    print("Student not found")

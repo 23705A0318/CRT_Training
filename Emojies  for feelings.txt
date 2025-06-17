@@ -1,0 +1,10 @@
+sentence= list(map(str,input("enter your feeling: ").split()))
+new_string =""
+emotion= { "happy": "😊","sad": "😢","angry": "😠"}
+for i in range(len(sentence)):
+    word = sentence[i]
+    if word in emotion:
+        new_string = new_string + "" + emotion[word]
+    else:
+        new_string = new_string +"" + word
+print(new_string)

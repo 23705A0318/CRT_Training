@@ -1,0 +1,9 @@
+prices = { "banana": 40,"mango": 50,"grapes": 30,"apple": 60,"pencil": 10,"pen": 15,"slate": 75}
+item_list = list(map(str, input("Enter the names of items : ").split()))
+bill_cost = 0
+for item in item_list:
+    print(item) 
+    if item in prices:  
+        bill_cost = bill_cost + prices[item]  
+        print(bill_cost, item)
+print("Total bill cost:", bill_cost)

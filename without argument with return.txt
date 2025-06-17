@@ -1,0 +1,8 @@
+def sum_of_number():
+    number1 = int(input("enter the number1: "))
+    number2 = int(input("enter the number2: "))
+    total = number1+number2
+    return total
+print(sum_of_number())
+print(sum_of_number())
+print(sum_of_number())

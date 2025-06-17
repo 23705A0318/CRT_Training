@@ -1,0 +1,6 @@
+student_info = {}
+for i in range (5):
+    key = input("enter student roll number: ")
+    value = input("enter student name: ")
+    student_info[key] = value
+print(student_info)

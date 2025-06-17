@@ -1,0 +1,11 @@
+contact_book = {}
+for i in range(4):
+    key = input("Enter the name you want to save: ")
+    value = int(input("Enter the contact number: "))
+    contact_book[value] = key
+print(contact_book)
+y = int(input("Enter the phone number to search: ")) 
+if y in contact_book:
+    print("Contact found",contact_book[y])
+else:
+    print("Sorry, contact not found")
