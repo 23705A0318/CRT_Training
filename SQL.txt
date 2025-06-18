@@ -1,0 +1,44 @@
+CREATE TABLE Employees(Employe_id INT primary key ,Name VARCHAR(10),Salary INT);
+INSERT INTO Employees(Employe_id,Name,Salary) Values(101, "Jaheed" ,30000);
+Insert into Employees(Employe_id,Name,Salary) values(102,"Nanda",20000);
+insert into Employees(Employe_id,Name,Salary) values(103,"Vivek",25000);
+insert into Employees(Employe_id,Name,Salary) values(104,"Shabber",35000);
+insert into Employees(Employe_id,Name,Salary) values(105,"Rafi",400000);
+insert into Employees(Employe_id,Name,Salary) values(106,"Mysoora",22000);
+insert into Employees(Employe_id,Name,Salary) values(107,"Vali",310000);
+insert into Employees(Employe_id,Name,Salary) values(108,"Elaheed",500000);
+insert into Employees(Employe_id,Name,Salary) values(109,"Viswanath",260000);
+insert into Employees(Employe_id,Name,Salary) values(110,"Basha",45000);
+select * from Employees
+
+ALTER TABLE Employees ADD  EMAIL VARCHAR(255); 
+SELECT * from Employees;
+
+UPDATE Employees SET EMAIL ='jaheed@gmail.com' where Employe_id = 101;
+UPDATE Employees SET EMAIL ='nanda@gmail.com' where Employe_id = 102;
+UPDATE Employees SET EMAIL ='vivek@gmail.com' where Employe_id = 103;
+UPDATE Employees SET EMAIL ='shabber@gmail.com' where Employe_id = 104;
+UPDATE Employees SET EMAIL ='rafi@gmail.com' where Employe_id = 105;
+UPDATE Employees SET EMAIL ='mysoora@gmail.com' where Employe_id = 106;
+UPDATE Employees SET EMAIL ='vali@gmail.com' where Employe_id = 107;
+UPDATE Employees SET EMAIL ='elaheed@gmail.com' where Employe_id = 108;
+UPDATE Employees SET EMAIL ='viswa@gmail.com' where Employe_id = 109;
+UPDATE Employees SET EMAIL='basha@gmail.com' where Employe_id = 110;
+SELECT * from Employees;
+
+ALTER TABLE Employees 
+RENAME  Salary TO Monthly_Salary;
+SELECT * from Employees;
+
+ALTER TABLE Employees DROP COLUMN EMAIL;
+SELECT * from Employees;
+
+UPDATE Employees SET Monthly_Salary = 600000 WHERE Employe_id = 101
+
+DELETE FROM Employees WHERE Employe_id=103
+
+SELECT NAME from Employees Where Monthly_Salary > 300000
+
+SELECT Name,Monthly_Salary FROM Employees order by Monthly_Salary ASC;
+
+SELECT avg(Monthly_Salary) from Employees;
